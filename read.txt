@@ -1,0 +1,15 @@
+Hola gente!,
+
+Actualizando un poco a la fecha lo que a mi me funcionó:
+
+1. En el AndroidManifest (Android/app/src/main /AndroidManifest.xml) agregamos android:usesCleartextTraffic="true"
+
+ <application
+        ...
+        android:usesCleartextTraffic="true">
+
+2. En pubspec.yaml usamos socket_io_client: ^2.0.0-beta.4-nullsafety.0
+
+3. En socket_service.dart
+
+4. En el servidor importante usar la versión 4.4.0 de socket.io, tenía la v4.4.1 y no me funcionaba, lo bajé a la antes mencionada y me funcionó perfecto.
